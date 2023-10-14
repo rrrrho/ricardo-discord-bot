@@ -8,7 +8,7 @@ module.exports = {
         const server = client.guilds.cache.get('1062074461559468043');
         const members = await server.members.fetch();
         const todayIs = new Date().getDay();
-        const reminderDays = [2, 3, 5];
+        const reminderDays = [2, 3, 7];
     
         const embed = new EmbedBuilder()
         .setColor('#6CC4A1')
@@ -17,8 +17,8 @@ module.exports = {
         .setImage('https://i.pinimg.com/originals/5c/7f/23/5c7f23935276c1b242320bc92d304c35.gif')
     
         
-        cron.schedule('42 02 * * *', () => {
-
+        cron.schedule('47 00 * * *', () => {
+            console.log(todayIs)
             if (reminderDays.includes(todayIs)) {
                 const wantRemindMembers = [];
 
