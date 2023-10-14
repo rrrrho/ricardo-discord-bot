@@ -1,6 +1,4 @@
 const { EmbedBuilder, Events } = require(`discord.js`);
-const schedule = require('node-schedule');
-const cron = require('node-cron');
 
 module.exports = {
   name: Events.ClientReady,
