@@ -1,6 +1,6 @@
 const { ActivityType, Events } = require('discord.js');
 const mongoose = require('mongoose')
-const mongodbURL = process.env.MONGODBURL;
+const mongodbURL = process.env['MONGODBURL'];
 
 const statusArray = [
     {
